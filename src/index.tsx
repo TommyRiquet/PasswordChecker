@@ -1,7 +1,6 @@
 import React from 'react'
 
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider, CssBaseline } from '@mui/material'
 
 import App from './components/App'
@@ -23,9 +22,7 @@ root.render(
 			<GlobalContextProvider>
 				<PasswordContextProvider>
 					<CssBaseline />
-					<BrowserRouter>
-						<App />
-					</BrowserRouter>
+					<App />
 				</PasswordContextProvider>
 			</GlobalContextProvider>
 		</ThemeProvider>

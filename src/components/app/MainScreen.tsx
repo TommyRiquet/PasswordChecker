@@ -1,15 +1,15 @@
 import { FC } from 'react'
 
-import { Outlet } from 'react-router-dom'
-
 import { Box } from '@mui/material'
+
+import HomePage from './view'
 import Footer from './Footer'
 
 const MainScreen : FC = () => {
 
 	return (
 		<Box display='flex' flexDirection='column'>
-			<Outlet/>
+			<HomePage />
 			<Footer/>
 		</Box>
 	)
